@@ -1,7 +1,7 @@
-import {test, expect} from '@playwright/test'
+import {test, test as it, expect} from '@playwright/test'
 
 
-test.describe("Using the Google search engine", async() => {
+test.describe("Using the Google search engine", () => {
     it("Go to the site" , async({page}) => {
         await page.goto("https://www.gooogle.com")
     })
