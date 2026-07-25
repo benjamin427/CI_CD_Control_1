@@ -6,7 +6,7 @@ test.describe("Using the Google search engine", () => {
         await page.goto("https://www.google.com")
     })
     it("Enter search field with random texts", async({page}) => {
-        await page.locator('#APjFqb').fill("salesforce")
+        await page.locator('[name="q"]').fill("salesforce")
     })
     it("Click the search button", async({page}) => {
         await page.getByRole('button', {name: 'Google Search'})
